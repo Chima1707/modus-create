@@ -17,6 +17,3 @@ npm start
 ```
 
 
-The APIs can be found at
-[APIs](http://localhost:8888/vehicles) 
-
