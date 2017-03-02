@@ -11,7 +11,7 @@ test('GET /vehicles/2015/Audi/A3 (get vehicles decriptions when called with exis
   server.inject(options, function(response) {
     t.equal(response.statusCode, 200, 'Successful');
     t.equal(response.result.Count, 4, 'vehicle count should be 4' );
-    t.notEqual(response.result.Results[0].VehicleId, undefined, 'VehicleId exist for vehicles' );
+    t.notEqual(response.result.Results[0].VehicleId, undefined, 'VehicleId exist for vehicles');
     t.end();
   });
 });
@@ -58,7 +58,7 @@ test('POST /vehicles (get vehicles decriptions when called with correct payload 
   });
 })
 
-test('POST /vehicles (get vehicles decriptions when called with correct payload as parameters instead)', function(t) {
+test('POST /vehicles (get vehicles decriptions when called with incorrect payload as parameters instead)', function(t) {
   var options = {
     method: 'POST',
     url: '/vehicles',
